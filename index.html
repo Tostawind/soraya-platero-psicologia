@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soraya Platero</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo_sombra.png">
+            <div class="logo_titulo">
+                <h2>Soraya Platero</h2>
+                <p>Psicología</p>
+            </div>
+        </div>
+        <input type="checkbox" id="header-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobremi">Sobre mi</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <label for="header-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+    <!-- H O M E -->
+    <section id="home" class="home-container">
+        <div class="titulo">
+            <h1>Soraya Platero</h1>
+            <p>Psicología</p>
+        </div>
+
+        <p class="texto_presentacion">
+        Aquí encontrarás un lugar en el que podrás abrirte y sentirte libre.<br>
+        Un espacio donde podrás conocerte y cuidar de ti.<br>
+        Yo te acompañaré en el proceso.
+        </p>
+
+        <div class="imagen-container">
+            <img src="./img/Soraya_zoom_hd.png" alt="">
+        </div>
+
+        <div class="botones">
+            <a href="#contacto">Cita Online</a>
+            <a href="#servicios">Info</a>
+        </div>
+    </section>
+
+    <!-- S O B R E  M I -->
+    <section class="sobremi-container" id="sobremi">
+        <h3 class="titulo-seccion">Sobre mí</h3>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, <b>voluptatum</b> quam. Itaque sapiente ipsa natus aperiam voluptates autem inventore facere alias, deserunt odit magnam quae doloribus rem dolorum deleniti nam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, <b>voluptatum</b> quam. Itaque sapiente ipsa natus aperiam voluptates autem inventore facere alias, deserunt odit magnam quae doloribus rem dolorum deleniti nam.
+           <br> <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, <b>voluptatum</b> quam. Itaque sapiente ipsa natus aperiam voluptates autem inventore facere alias, deserunt odit magnam quae doloribus rem dolorum deleniti nam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio, <b>voluptatum</b> quam. Itaque sapiente ipsa natus aperiam voluptates autem inventore facere alias, deserunt odit magnam quae doloribus rem dolorum deleniti nam.
+        </p>
+        <div class="circulo-logo">
+            <img src="./img/Logo_blanco.png" alt="">
+        </div>
+        <img class="fondo-sobremi" src="./img/Jackie.PNG" alt="">
+    </section>
+
+    <!-- S E R V I C I O -->
+    <section class="servicio-container" id="servicios">
+        <h3 class="titulo-seccion">Servicios</h3>
+        <div class="servicio-card">
+            <h4>Terapia Online</h4>
+            <p>
+                Terapia psicológica para cualquier tipo de problemática que incluye todo el proceso de evaluación, intervención, seguimiento y alta. Se utiliza una metodología integradora que comprende técnicas y teorías de diferentes enfoques terapéutos. Las terapias online se realizan a través de Skype y tienen una duración de 50 minutos.
+            </p>
+        </div>
+        <div class="servicio-card">
+            <h4>Terapia por chat</h4>
+            <p>
+                Terapia psicológica para cualquier tipo de problemática que incluye todo el proceso de evaluación, intervención, seguimiento y alta. Se utiliza una metodología integradora que comprende técnicas y teorías de diferentes enfoques terapéutos (terapia cognitivo-conductual, terapais de tercera generacíon, psicología positiva...). 
+            </p>
+        </div>
+        <div class="servicio-card">
+            <h4>Talleres individuales</h4>
+            <p>
+                Terapia psicológica para cualquier tipo de problemática que incluye todo el proceso de evaluación, intervención, seguimiento y alta. Se utiliza una metodología integradora que comprende técnicas y teorías de diferentes enfoques terapéutos (terapia cognitivo-conductual, terapais de tercera generacíon, psicología positiva...).
+            </p>
+        </div>
+        <div class="circulo-logo">
+            <img src="./img/Logo_blanco.png" alt="">
+        </div>
+        </div>
+    </section>
+
+    <!-- C O N T A C T O -->
+    <section class="contacto-container" id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <div class="texto-formulario">
+            <p class="texto-lectura">
+                Contacta conmigo a través del teléfono <b>633 00 11 22</b><br>
+                enviando un correo electrónico a<br>
+            <b>consulta@sorayaplatero.com</b> o bien<br>
+                completando el siguiente formulario de contacto.<br>
+                <br>
+                Te responderé a la mayor brevedad posible
+            </p>
+
+            <form action="">
+                <label for="nombre">Nombre y apellidos<span class="asterisco"> *</span></label><br>
+                <input type="text" id="nombre" name="nombre" class="campo" required><br>
+                <label for="telefono">Teléfono</label><br>
+                <input type="text" id="telefono" name="telefono" class="campo"><br>
+                <label for="email">Email<span class="asterisco"> *</span></label><br>
+                <input type="email" id="email" name="email" class="campo" required><br>
+                <label for="mensaje">Mensaje<span class="asterisco"> *</span></label><br>
+                <textarea id="mensaje" name="mensaje" class="campo" required></textarea><br>
+                
+                <input type="checkbox" id="politica" required/>
+                <label for="politica" class="check-label">He leido y acepto la <b>política de proteción de datos</b><span class="asterisco"> *</span></label><br>
+                <input type="checkbox" id="info" />
+                <label for="publicidad" class="check-label">Acepto recibir información de Soraya Platero.<span class="asterisco"> *</span></label><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="circulo-logo">
+            <img src="./img/Logo_blanco.png" alt="">
+        </div>
+    </section>
+
+    <!-- F O O T E R -->
+    <footer>
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+    </footer>
+</body>
+</html>
