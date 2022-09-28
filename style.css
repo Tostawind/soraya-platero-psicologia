@@ -246,14 +246,13 @@ header .nav-toggle-label span::after {
     
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3fr 2fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr 1fr;
     grid-template-areas: 
         "titulo"
         "foto"
         "texto"
         "botones";
 }
-
 
 .titulo {
     grid-area: titulo;
@@ -305,15 +304,20 @@ header .nav-toggle-label span::after {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5em 1em;
+    padding: 1.5em 3em;
     /* font-size: clamp(1em, 2.2vw, 1.2em); */
     font-size: var(--fuente-medio);
     opacity: 0.8;
+    text-align: justify;
 }
 
 .imagen-container  { 
     grid-area: foto;
     overflow: hidden;
+}
+
+.imagen-container > img  {
+    height: 50vh;
 }
 
 .home-container .botones {
@@ -381,7 +385,7 @@ header .nav-toggle-label span::after {
 }
 
 .texto_presentacion {
-    padding: 0;
+    padding: 0 15vw;
     line-height: 30px;
     /* font-size: 1.6vw; */
 }
@@ -466,7 +470,7 @@ b {
     
     .sobremi-container > p {
         padding: 3em  10vw;
-        line-height: 1.8em;
+        line-height: 2em;
     }
 
     .sobremi-container > .circulo-logo { 
@@ -597,12 +601,16 @@ form > #mensaje {
     max-height: 110px;
 }
 
-form > input[type=checkbox] {
+.check-container {
+    display: flex;
+    align-items: center;
     margin-bottom: 2em;
 }
 
 .check-label {
     font-size: var(--fuente-enano);
+    font-weight: bold;
+    margin-left: .5em;
 }
 
 form > button {

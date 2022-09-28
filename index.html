@@ -41,8 +41,8 @@
         </div>
 
         <p class="texto_presentacion">
-        Aquí encontrarás un lugar en el que podrás abrirte y sentirte libre.<br>
-        Un espacio donde podrás conocerte y cuidar de ti.<br>
+        Aquí encontrarás un lugar en el que podrás abrirte y sentirte libre.
+        Un espacio donde podrás conocerte y cuidar de ti.
         Yo te acompañaré en el proceso.
         </p>
 
@@ -121,11 +121,15 @@
                 <input type="email" id="email" name="email" class="campo" required><br>
                 <label for="mensaje">Mensaje<span class="asterisco"> *</span></label><br>
                 <textarea id="mensaje" name="mensaje" class="campo" required></textarea><br>
-                
-                <input type="checkbox" id="politica" required/>
-                <label for="politica" class="check-label">He leido y acepto la <b>política de proteción de datos</b><span class="asterisco"> *</span></label><br>
-                <input type="checkbox" id="info" />
-                <label for="publicidad" class="check-label">Acepto recibir información de Soraya Platero.<span class="asterisco"> *</span></label><br>
+               
+                <div class="check-container">
+                    <input type="checkbox" id="politica" required/>
+                    <label for="politica" class="check-label">He leido y acepto la <b>política de proteción de datos</b><span class="asterisco"> *</span></label><br>
+                </div>
+                <div class="check-container">
+                    <input type="checkbox" id="info" />
+                    <label for="publicidad" class="check-label">Acepto recibir información de Soraya Platero.<span class="asterisco"> *</span></label><br>
+                </div>
                 <button type="submit">Enviar</button>
             </form>
         </div>
