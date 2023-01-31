@@ -12,25 +12,26 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="./img/logo_sombra.png">
-            <div class="logo_titulo">
-                <h2>Soraya Platero</h2>
-                <p>Psicología</p>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="./img/logo_sombra.png">
+                <div class="logo_titulo">
+                    <h2>Soraya Platero</h2>
+                    <p>Psicología</p>
+                </div>
             </div>
-        </div>
-        <input type="checkbox" id="header-toggle" class="nav-toggle">
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#sobremi">Sobre mi</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#sobremi" class="nav-link">Sobre mi</a></li>
+                <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
             </ul>
+            <div class="burger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
-        <label for="header-toggle" class="nav-toggle-label">
-            <span></span>
-        </label>
     </header>
 
     <!-- H O M E -->
@@ -146,5 +147,7 @@
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
     </footer>
+
+    <script src="./app.js"></script>
 </body>
 </html>
